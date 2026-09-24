@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube Masterclass | ৳399</title>
+
+<style>
+:root{
+  --bg:#030712;--panel:#08111f;--panel2:#0b1728;--line:#19314d;
+  --text:#f8fafc;--muted:#91a4ba;--red:#ff1744;--red2:#ff3d61;
+  --cyan:#38bdf8;--green:#4ade80;--gold:#ffe66d;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;background:
+ radial-gradient(circle at 15% -10%,rgba(255,23,68,.14),transparent 30%),
+ radial-gradient(circle at 90% 10%,rgba(56,189,248,.11),transparent 28%),
+ var(--bg);
+ color:var(--text);font-family:Arial,"Noto Sans Bengali",sans-serif;
+ line-height:1.65;overflow-x:hidden
+}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:42px 42px}
+.container{width:min(1120px,92%);margin:auto}
+.nav{
+ position:sticky;top:0;z-index:50;padding:15px 0;
+ display:flex;justify-content:space-between;align-items:center;
+ border-bottom:1px solid rgba(255,255,255,.07);
+ background:rgba(3,7,18,.82);backdrop-filter:blur(18px)
+}
+.logo{font-size:23px;font-weight:900;letter-spacing:-.5px}.logo span{color:var(--red)}
+.btn{
+ display:inline-flex;align-items:center;justify-content:center;gap:8px;
+ background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;
+ padding:13px 22px;border-radius:10px;font-weight:900;text-decoration:none;
+ box-shadow:0 10px 30px rgba(255,23,68,.22);transition:.2s
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 35px rgba(255,23,68,.32)}
+.hero{text-align:center;padding:70px 0 45px;position:relative}
+.hero:after{content:"";position:absolute;width:420px;height:420px;background:rgba(255,23,68,.09);filter:blur(90px);border-radius:50%;top:0;left:50%;transform:translateX(-50%);z-index:-1}
+.tag{display:inline-block;color:#ffb4c2;border:1px solid rgba(255,23,68,.5);background:rgba(255,23,68,.07);border-radius:30px;padding:7px 15px;font-size:13px;font-weight:800;letter-spacing:.3px}
+h1{font-size:clamp(38px,6.2vw,68px);line-height:1.08;letter-spacing:-1.8px;margin:20px 0 14px}
+.hero>p{max-width:790px;margin:0 auto 22px;color:#aebbd0;font-size:18px}
+.price{
+ display:inline-flex;align-items:center;gap:15px;background:linear-gradient(135deg,rgba(255,23,68,.12),rgba(11,23,40,.95));
+ border:1px solid rgba(255,23,68,.65);border-radius:14px;padding:13px 20px;margin:12px 0 24px;
+ box-shadow:0 15px 45px rgba(0,0,0,.3)
+}
+.price del{color:#77879c}.price strong{font-size:30px;color:#fff}
+.dashboard{
+ margin:38px auto 0;background:linear-gradient(145deg,#091a2c,#050c16);
+ border:1px solid #24567d;border-radius:20px;padding:17px;
+ box-shadow:0 25px 90px rgba(0,0,0,.58),inset 0 1px 0 rgba(255,255,255,.04);
+ text-align:left;max-width:1000px
+}
+.dash-top{display:flex;justify-content:space-between;align-items:center;padding:5px 5px 17px}
+.dash-top b{font-size:15px}.live{color:var(--green);font-size:12px;font-weight:800}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.stat{background:linear-gradient(145deg,#10253b,#0a1727);border:1px solid #1c3e5c;border-radius:11px;padding:15px}
+.stat small{color:#879bb0}.stat b{display:block;font-size:23px;margin:3px 0}.up{color:var(--green);font-size:11px}
+.chart{height:155px;margin-top:12px;border-radius:11px;background:linear-gradient(180deg,#0b2d49,#07101b);overflow:hidden;border:1px solid #143752}
+.chart svg{width:100%;height:100%}
+section{padding:65px 0}.title{text-align:center;font-size:36px;letter-spacing:-.7px;margin:0 0 8px}.sub{text-align:center;color:#91a2b7;margin:0 0 30px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.feature,.course,.pay{
+ background:linear-gradient(145deg,rgba(10,20,35,.96),rgba(6,14,25,.96));
+ border:1px solid #1b314b;border-radius:16px;padding:24px;
+ box-shadow:0 15px 45px rgba(0,0,0,.18)
+}
+.feature{position:relative;overflow:hidden}.feature:before{content:"";position:absolute;left:0;top:0;width:3px;height:100%;background:var(--red)}
+.feature b{display:block;font-size:18px;margin-bottom:7px}.feature p{color:#91a2b7;margin:0;font-size:14px}
+.course{padding:28px}.modules{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.module{padding:17px;background:rgba(14,27,44,.72);border:1px solid #1b344f;border-radius:11px;transition:.2s}
+.module:hover{border-color:#315b7d;transform:translateY(-2px)}
+.module span{color:#ff5575;font-weight:900;margin-right:8px}.module small{color:#91a4b9}
+.paygrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px}
+.pay{padding:27px}.old{color:#78879a;text-decoration:line-through}.bigprice{font-size:56px;font-weight:950;letter-spacing:-2px}
+.methods{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.method{padding:16px;border-radius:11px;background:#0e1b2c;border:1px solid #29415b}.method b{display:block;margin-bottom:3px}.method small{color:#91a2b7}
+form{display:grid;gap:12px;margin-top:16px}label{font-size:13px;color:#aebbd0}
+input,select{width:100%;margin-top:5px;padding:13px;border-radius:9px;border:1px solid #29415b;background:#07101c;color:#fff;outline:none}
+input:focus,select:focus{border-color:#ff5575;box-shadow:0 0 0 3px rgba(255,23,68,.1)}
+button{border:0;background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;padding:14px;border-radius:9px;font-weight:900;font-size:15px;cursor:pointer}
+.note{font-size:12px;color:#74869c;margin-top:12px}
+footer{text-align:center;padding:30px;border-top:1px solid #17243a;color:#66788e;font-size:12px}
+@media(max-width:760px){
+ .nav{padding:12px 0}.logo{font-size:19px}.nav .btn{padding:10px 14px;font-size:12px}
+ .hero{padding:48px 0 35px}.hero>p{font-size:16px}.price strong{font-size:25px}
+ .stats{grid-template-columns:1fr 1fr}.features,.paygrid{grid-template-columns:1fr}.modules{grid-template-columns:1fr}
+}
+@media(max-width:480px){.container{width:94%}.title{font-size:29px}.dashboard{padding:10px}.stat{padding:11px}.stat b{font-size:18px}.chart{height:125px}.bigprice{font-size:48px}.methods{grid-template-columns:repeat(3,1fr)}}
+
+.pay-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:4px}
+.copy-btn{border:1px solid #29415b;background:#122238;color:#dbeafe;border-radius:8px;padding:6px 9px;font-size:12px;font-weight:700;cursor:pointer}
+.copy-btn:hover{background:#19314b}
+.copy-btn.copied{color:#55e69a;border-color:#55e69a}
+@media(max-width:700px){.methods{grid-template-columns:1fr}}
+</style>
+
+</head>
+<body>
+<div class="container nav">
+  <div class="logo">▶ YouTube <span>Masterclass</span></div>
+  <a href="#enroll" class="btn">এখনই ভর্তি হন →</a>
+</div>
+
+<header class="hero container">
+  <span class="tag">USA Audience YouTube Masterclass</span>
+  <h1>চাকরির পিছনে না ছুটে,<br>অনলাইনে স্কিল শিখে গড়ে তুলুন নিজের ক্যারিয়ার</h1>
+  <div class="price"><del>৳9,000</del><strong>Offer Price ৳399</strong></div>
+  <p><b>💰 মাসিক ১–১.৫ লক্ষ টাকা ইনকাম করুন</b><br>
+  AI ও YouTube-এর শক্তিকে কাজে লাগিয়ে শিখুন আধুনিক অনলাইন স্কিল এবং তৈরি করুন নিজের অনলাইন আয়ের সুযোগ।</p>
+  <a href="#enroll" class="btn">🚀 YouTube Masterclass-এ ভর্তি হন</a>
+
+  <div class="dashboard">
+    <div class="dash-top"><b>YouTube Studio — Analytics</b><span class="live">● LIVE</span></div>
+    <div class="stats">
+      <div class="stat"><small>Views</small><b>1.2M</b><span class="up">↑ 32.5%</span></div>
+      <div class="stat"><small>Watch time</small><b>86.4K</b><span class="up">↑ 21.8%</span></div>
+      <div class="stat"><small>Subscribers</small><b>18.7K</b><span class="up">↑ 14.2%</span></div>
+      <div class="stat"><small>Estimated revenue</small><b>$916.56</b><span class="up">↑ 28.4%</span></div>
+    </div>
+    <div class="chart">
+      <svg viewBox="0 0 900 150" preserveAspectRatio="none">
+        <polyline points="0,125 80,118 150,128 230,92 300,104 370,68 450,82 520,42 600,55 675,30 750,45 820,18 900,28" fill="none" stroke="#38bdf8" stroke-width="4"/>
+        <polyline points="0,145 900,145" fill="none" stroke="#25435c" stroke-width="1"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<section>
+<div class="container">
+<h2 class="title">🎯 এই কোর্সে কী শিখবেন?</h2>
+<p class="sub">বাংলাদেশে বসে USA-focused YouTube channel তৈরি ও content strategy</p>
+<div class="features">
+<div class="feature"><b>🇺🇸 USA Audience Strategy</b><p>USA audience-এর জন্য niche, content idea ও positioning বুঝুন।</p></div>
+<div class="feature"><b>▶️ Shorts Content</b><p>Shorts-এর জন্য hook, retention, title ও thumbnail strategy শিখুন।</p></div>
+<div class="feature"><b>📈 Channel Growth</b><p>Analytics দেখে কোন content কাজ করছে তা বুঝে পরবর্তী content plan করুন।</p></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2 class="title">📚 কোর্সের বিস্তারিত</h2>
+<p class="sub">শুরু থেকে channel setup এবং content publishing পর্যন্ত ধাপে ধাপে</p>
+<div class="course">
+<div class="modules">
+<div class="module"><span>01</span><b>Niche Selection</b><br><small>USA audience-এর জন্য উপযুক্ত niche নির্বাচন।</small></div>
+<div class="module"><span>02</span><b>Channel Setup</b><br><small>Channel branding, settings ও basic setup।</small></div>
+<div class="module"><span>03</span><b>Content Research</b><br><small>Content idea ও competitor research করার পদ্ধতি।</small></div>
+<div class="module"><span>04</span><b>Shorts Strategy</b><br><small>Hook, retention, format ও upload workflow।</small></div>
+<div class="module"><span>05</span><b>Title & Thumbnail</b><br><small>Click-worthy কিন্তু relevant title ও thumbnail planning।</small></div>
+<div class="module"><span>06</span><b>SEO & Analytics</b><br><small>YouTube search ও analytics-এর basic ব্যবহার।</small></div>
+<div class="module"><span>07</span><b>Monetization</b><br><small>Monetization eligibility ও income fundamentals।</small></div>
+<div class="module"><span>08</span><b>Copyright Safety</b><br><small>Copyright ও reused-content ঝুঁকি সম্পর্কে ধারণা।</small></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="enroll">
+<div class="container">
+<h2 class="title">🔥 এখনই ভর্তি হন</h2>
+<p class="sub">৳9,000 মূল্যের কোর্স এখন অফার প্রাইসে মাত্র ৳399</p>
+<div class="paygrid">
+<div class="pay">
+<div class="old">Regular Price: ৳9,000</div>
+<div class="bigprice">৳399</div>
+<p class="sub" style="text-align:left">একবার পেমেন্ট করে কোর্সে enrollment-এর জন্য আপনার তথ্য পাঠান।</p>
+<div class="methods">
+  <div class="method">
+    <b>💳 bKash</b>
+    <div class="pay-row"><strong>01780987641</strong><button type="button" class="copy-btn" onclick="copyNumber('01780987641',this)">Copy</button></div>
+    <small>Send Money</small>
+  </div>
+  <div class="method">
+    <b>💳 Nagad</b>
+    <div class="pay-row"><strong>01913358086</strong><button type="button" class="copy-btn" onclick="copyNumber('01913358086',this)">Copy</button></div>
+    <small>Send Money</small>
+  </div>
+  <div class="method">
+    <b>🚀 Rocket</b>
+    <div class="pay-row"><strong>01913358086</strong><button type="button" class="copy-btn" onclick="copyNumber('01913358086',this)">Copy</button></div>
+    <small>Send Money</small>
+  </div>
+</div>
+
+</div>
+<div class="pay">
+<h3>Enrollment Form</h3>
+<form onsubmit="sendWhatsApp(event)">
+<label>আপনার নাম<input id="name" required></label>
+<label>কোর্স<select id="course"><option>YouTube Masterclass — ৳399</option></select></label>
+<label>Payment Method<select id="method"><option>bKash</option><option>Nagad</option><option>Rocket</option></select></label>
+<label>Sender Number<input id="number" required placeholder="01XXXXXXXXX"></label>
+<label>Transaction ID<input id="trx" required></label>
+<button type="submit">Submit Payment</button>
+</form>
+<p class="note">Submit Payment Details চাপলে আপনার WhatsApp অ্যাপ খুলবে এবং আপনার payment information আমার WhatsApp নম্বর <b>01628469282</b>-এ পাঠানোর জন্য message তৈরি হবে।</p>
+</div>
+</div>
+</div>
+</section>
+
+<footer>YouTube Masterclass • Learn • Build • Grow</footer>
+
+<script>
+function copyNumber(number, btn){
+  navigator.clipboard.writeText(number).then(function(){
+    const old = btn.textContent;
+    btn.textContent = 'Copied ✓';
+    btn.classList.add('copied');
+    setTimeout(function(){
+      btn.textContent = old;
+      btn.classList.remove('copied');
+    }, 1400);
+  });
+}
+
+function sendWhatsApp(e){
+ e.preventDefault();
+
+ const name = document.getElementById('name').value.trim();
+ const course = document.getElementById('course').value;
+ const method = document.getElementById('method').value;
+ const number = document.getElementById('number').value.trim();
+ const trx = document.getElementById('trx').value.trim();
+
+ const message =
+ `🔔 NEW PAYMENT SUBMISSION%0A%0A` +
+ `👤 Name: ${encodeURIComponent(name)}%0A` +
+ `📚 Course: ${encodeURIComponent(course)}%0A` +
+ `💳 Payment Method: ${encodeURIComponent(method)}%0A` +
+ `📱 Sender Number: ${encodeURIComponent(number)}%0A` +
+ `🧾 Transaction ID: ${encodeURIComponent(trx)}%0A%0A` +
+ `Please verify my payment.`;
+
+ const whatsappUrl = 'https://wa.me/8801628469282?text=' + message;
+ window.location.href = whatsappUrl;
+}
+</script>
+</body>
+</html>
